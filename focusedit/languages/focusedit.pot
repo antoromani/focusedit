@@ -1,0 +1,65 @@
+﻿# Copyright (C) 2025 Antonio Romani
+# This file is distributed under the GPL2+.
+msgid ""
+msgstr ""
+"Project-Id-Version: FocusEdit\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/focusedit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Textdomain-Support: yes\n"
+
+msgid "FocusEdit"
+msgstr ""
+
+msgid "Ocultar título del editor"
+msgstr ""
+
+msgid "Funciona con algunos temas y plugins: Spectra One, Ultimate Blocks, Otter, Getwig, Publishpress, Essential Blocks... no con: Kadence, Greenshift..."
+msgstr ""
+
+msgid "Interfaz limpia"
+msgstr ""
+
+msgid "Optimiza espacios en el Content Canvas y paneles"
+msgstr ""
+
+msgid "Barra superior con espacios optimizados"
+msgstr ""
+
+msgid "Barra superior colapsable"
+msgstr ""
+
+msgid "Paneles laterales flotantes"
+msgstr ""
+
+msgid "Panel inferior flotante"
+msgstr ""
+
+msgid "Anclaje manual de paneles con clic en espacio libre"
+msgstr ""
+
+msgid "En los paneles laterales, debe hacer clic en espacio libre de barra superior"
+msgstr ""
+
+msgid "Expansión inteligente en panel derecho"
+msgstr ""
+
+msgid "Mostrar panel bloques al mouseover sobre Block Toolbar en el Content Canvas. Funciona con algunos temas y plugins."
+msgstr ""
+
+msgid "Scrollbars mínimalistas en paneles"
+msgstr ""
+
+msgid "Flecha en paneles flotantes"
+msgstr ""
+
+msgid "Ajustes del editor"
+msgstr ""

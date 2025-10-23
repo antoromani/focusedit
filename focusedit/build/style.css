@@ -1,0 +1,410 @@
+/* === 1- TOGGLE: Ocultar título del editor === */
+
+body.focusedit-hideTitle .edit-site-visual-editor__post-title-wrapper,
+body.focusedit-hideTitle .edit-site-header-edit-mode .edit-site-visual-editor__post-title-wrapper,
+body.focusedit-hideTitle .edit-post-visual-editor__post-title-wrapper,
+body.focusedit-hideTitle .editor-styles-wrapper .editor-post-title,
+body.focusedit-hideTitle .block-editor-block-list__block.wp-block-post-title,
+body.focusedit-hideTitle .wp-block-post-title {
+    display: none !important;
+}
+
+
+/* === 2- TOGGLE: Interfaz limpia === */
+
+.focusedit-cleanInterface .has-footer .interface-interface-skeleton__body {
+    padding-bottom: 0 !important;
+}
+
+.focusedit-cleanInterface .interface-complementary-area__fill,
+.focusedit-cleanInterface #edit-post\:block {
+    width: 280px !important;
+}
+
+.focusedit-cleanInterface .interface-interface-skeleton__header .eb-write-ai-button-wrapper {
+    min-width: 0;
+    max-width: 0;
+    overflow: hidden;
+    transition: max-width 0.3s ease;
+}
+
+.focusedit-cleanInterface .interface-interface-skeleton__header .eb-write-ai-button-wrapper:not(:empty) {
+    min-width: 140px;
+}
+
+
+/* === 3- TOGGLE: Barra superior con espacios optimizados === */
+
+.focusedit-topBarSpacing
+ .interface-interface-skeleton__header .editor-document-tools__left,
+
+.focusedit-topBarSpacing
+ .interface-interface-skeleton__header .editor-header__settings,
+
+.focusedit-topBarSpacing
+ .interface-interface-skeleton__header .interface-pinned-items {
+    gap: 0 !important;
+}
+
+
+.focusedit-topBarSpacing
+ .interface-interface-skeleton__header .editor-document-bar__title {
+    padding: 0;
+}
+
+
+.focusedit-topBarSpacing
+ .editor-document-bar__post-title {
+    overflow: visible;
+    text-overflow: unset;
+}
+
+
+.focusedit-topBarSpacing
+ .interface-interface-skeleton__header .editor-post-publish-button {
+    margin-left: 5px;
+	padding: 6px 12px !important;
+}
+
+
+.focusedit-topBarSpacing
+ .interface-interface-skeleton__header button {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    box-sizing: border-box;
+    height: 32px !important;
+    align-items: center;
+    gap: 5px;
+	font-size: 13px;
+    text-align: left;
+    display: flex;
+	padding: 4px !important;
+}
+
+
+.focusedit-topBarSpacing
+ .interface-interface-skeleton__header button:not(.editor-document-bar button) {
+    max-width: 100px !important;
+    display: inline-block;
+    justify-content: flex-start;
+}
+
+
+/* === 4- TOGGLE: Barra superior colapsable === */
+
+.focusedit-collapsibleTopBar
+ .interface-interface-skeleton__header {
+    position: fixed !important;
+    top: 10px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    height: 15px !important;
+    border-radius: 12px !important;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3) !important;
+    z-index: 100000 !important;
+    transition: all 0.3s ease !important;
+    overflow: hidden !important;
+    outline: 1px solid #3858e9 !important;
+    background: rgba(56,89,233,0.15) !important;
+}
+
+
+.focusedit-collapsibleTopBar
+ .editor-header.edit-post-header {
+    display: flex !important;
+    width: fit-content !important;
+    float: none !important;
+    grid-template: none !important;
+}
+
+
+.focusedit-collapsibleTopBar
+ .interface-interface-skeleton__header .editor-header {
+    background: transparent !important;
+}
+
+
+.focusedit-collapsibleTopBar
+ .interface-interface-skeleton__header > * {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.focusedit-collapsibleTopBar
+ .interface-interface-skeleton__header:hover {
+    height: 60px !important;
+    background: #fff !important;
+}
+
+
+.focusedit-collapsibleTopBar
+ .interface-interface-skeleton__header:hover > * {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/* === 5- TOGGLE: Paneles laterales flotantes === */
+.focusedit-floatingSidePanels .interface-interface-skeleton__secondary-sidebar,
+.focusedit-floatingSidePanels .interface-interface-skeleton__sidebar {
+    position: absolute !important;
+    top: 10% !important;
+    height: 80% !important;
+    max-height: 80% !important;
+    width: 30px !important;
+    overflow: hidden !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) !important;
+    z-index: 99999 !important;
+    transition: all 0.3s ease !important;
+    box-sizing: border-box !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    outline: 1px solid #3858e9 !important;
+    background: rgba(56,89,233,0.15) !important;
+}
+
+.focusedit-floatingSidePanels .interface-interface-skeleton__secondary-sidebar > div,
+.focusedit-floatingSidePanels .interface-interface-skeleton__sidebar > div,
+.focusedit-floatingSidePanels .editor-list-view-sidebar > div {
+    clip-path: inset(0 round 12px);
+    height: 100%;
+}
+
+.focusedit-floatingSidePanels .interface-interface-skeleton__secondary-sidebar {
+    left: 0 !important;
+    right: auto !important;
+    border-radius: 0 12px 12px 0 !important;
+}
+
+.focusedit-floatingSidePanels .interface-interface-skeleton__sidebar {
+    right: 0 !important;
+    left: auto !important;
+    border-radius: 12px 0 0 12px !important;
+}
+
+.focusedit-floatingSidePanels .interface-interface-skeleton__secondary-sidebar,
+.focusedit-floatingSidePanels .interface-interface-skeleton__sidebar:has(.interface-complementary-area__fill) {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+.focusedit-floatingSidePanels .interface-interface-skeleton__secondary-sidebar > *,
+.focusedit-floatingSidePanels .interface-interface-skeleton__sidebar > * {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.focusedit-floatingSidePanels .interface-interface-skeleton__secondary-sidebar:hover,
+.focusedit-floatingSidePanels .interface-interface-skeleton__sidebar:hover {
+    width: 280px !important;
+    overflow: visible !important;
+    background: #fff !important;
+}
+
+.focusedit-floatingSidePanels .interface-interface-skeleton__secondary-sidebar:hover > *,
+.focusedit-floatingSidePanels .interface-interface-skeleton__sidebar:hover > * {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* PANEL DE BLOQUES */
+.focusedit-floatingSidePanels .block-editor-block-types-list__item-icon {
+    padding: 8px 12px !important;
+}
+.focusedit-floatingSidePanels .block-editor-tabbed-sidebar {
+    width: 280px !important;
+}
+
+/* OTROS */
+/* titulares reducir espacio entre pestañas */
+.focusedit-floatingSidePanels .block-editor-tabbed-sidebar__tablist-and-close-button > div > button,
+.components-panel__header > div > button {
+    padding-inline: 7px !important;
+}
+.focusedit-floatingSidePanels .block-editor-tabbed-sidebar__tablist-and-close-button > div,
+.components-panel__header > div {
+    padding-left: 7px !important;
+	overflow-x: hidden !important;
+}
+/* titulares fondo X */
+.focusedit-floatingSidePanels .block-editor-tabbed-sidebar__tablist-and-close-button button {
+    background: transparent !important;
+}
+/* Popover de panel izquierdo Patrones y Medios */
+.focusedit-floatingSidePanels .block-editor-inserter__category-panel {
+    left: 280px !important;
+}
+
+
+/* === 6- TOGGLE: Panel inferior flotante === */
+.focusedit-floatingBottomPanel .interface-interface-skeleton__footer {
+    position: fixed !important;
+    bottom: 5px !important;
+    left: 0 !important;
+    width: 30px !important;
+    height: calc(4% - 5px) !important;
+    border-radius: 0 12px 12px 0 !important;
+    box-shadow: 0 0px 40px rgba(0, 0, 0, 0.3) !important;
+    z-index: 99999 !important;
+    transition: all 0.3s ease !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    outline: 1px solid #3858e9 !important;
+    background: rgba(56,89,233,0.15) !important;
+}
+
+.focusedit-floatingBottomPanel .interface-interface-skeleton__footer .block-editor-block-breadcrumb {
+    padding: 0 !important;
+    margin-left: 18px !important;
+	background: transparent !important;
+}
+
+.focusedit-floatingBottomPanel .interface-interface-skeleton__footer > * {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.focusedit-floatingBottomPanel .interface-interface-skeleton__footer:hover {
+    width: auto !important;
+    max-width: calc(100% - 20px) !important;
+    background: #fff !important;
+    outline: 1px solid rgba(56,89,233) !important;
+}
+
+.focusedit-floatingBottomPanel .interface-interface-skeleton__footer:hover > * {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/* === 7- TOGGLE: Anclaje manual de paneles con clic en espacio libre === */
+.focusedit-manualPin .interface-interface-skeleton__header.pinned,
+.focusedit-manualPin .interface-interface-skeleton__secondary-sidebar.pinned,
+.focusedit-manualPin .interface-interface-skeleton__sidebar.pinned,
+.focusedit-manualPin .interface-interface-skeleton__footer.pinned {
+    outline: 2px solid #3858e9 !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+.focusedit-manualPin .interface-interface-skeleton__header.pinned,
+.focusedit-manualPin .interface-interface-skeleton__header.pinned:hover {
+    width: auto !important;
+    height: auto !important;
+    background: #f3f5fd !important;
+}
+
+.focusedit-manualPin .interface-interface-skeleton__header.pinned .editor-document-bar {
+    background: #fff;
+}
+
+.focusedit-manualPin .interface-interface-skeleton__secondary-sidebar.pinned,
+.focusedit-manualPin .interface-interface-skeleton__sidebar.pinned,
+.focusedit-manualPin .interface-interface-skeleton__secondary-sidebar.pinned:hover,
+.focusedit-manualPin .interface-interface-skeleton__sidebar.pinned:hover {
+    width: 280px !important;
+    height: auto !important;
+}
+
+.focusedit-manualPin .interface-interface-skeleton__secondary-sidebar.pinned .block-editor-tabbed-sidebar__tablist-and-close-button,
+.focusedit-manualPin .interface-interface-skeleton__sidebar.pinned .components-panel__header {
+    background: #f3f5fd !important;
+}
+
+.focusedit-manualPin .interface-interface-skeleton__footer.pinned,
+.focusedit-manualPin .interface-interface-skeleton__footer.pinned:hover {
+    width: auto !important;
+    background: #f3f5fd !important;
+}
+
+.focusedit-manualPin .interface-interface-skeleton__header.pinned > *,
+.focusedit-manualPin .interface-interface-skeleton__secondary-sidebar.pinned > *,
+.focusedit-manualPin .interface-interface-skeleton__sidebar.pinned > *,
+.focusedit-manualPin .interface-interface-skeleton__footer.pinned > * {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+.focusedit-manualPin .interface-interface-skeleton__header.pinned:hover > *,
+.focusedit-manualPin .interface-interface-skeleton__secondary-sidebar.pinned:hover > *,
+.focusedit-manualPin .interface-interface-skeleton__sidebar.pinned:hover > *,
+.focusedit-manualPin .interface-interface-skeleton__footer.pinned:hover > * {
+    opacity: 1 !important;
+}
+
+
+/* === 8- TOGGLE: Expansión inteligente panel derecho === */
+.focusedit-smartExpansion .interface-navigable-region.interface-interface-skeleton__sidebar.force-expand {
+    width: 280px !important;
+    overflow: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    background: #fff !important;
+    outline: 1px solid #3858e9 !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+.focusedit-smartExpansion .interface-navigable-region.interface-interface-skeleton__sidebar.force-expand > * {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    visibility: visible !important;
+}
+
+.focusedit-smartExpansion .interface-interface-skeleton__sidebar:has(select:focus) {
+    width: 280px !important;
+    overflow: visible !important;
+}
+
+.focusedit-smartExpansion .interface-interface-skeleton__sidebar:has(select:focus) > * {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+
+/* === 9- TOGGLE: Scrollbars mínimalistas en paneles === */
+.focusedit-minimalScrollbars .interface-interface-skeleton__secondary-sidebar *::-webkit-scrollbar,
+.focusedit-minimalScrollbars .interface-interface-skeleton__sidebar *::-webkit-scrollbar {
+    width: 4px !important;
+    height: 4px !important;
+}
+
+.focusedit-minimalScrollbars .interface-interface-skeleton__secondary-sidebar *::-webkit-scrollbar-thumb,
+.focusedit-minimalScrollbars .interface-interface-skeleton__sidebar *::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.32) !important;
+    border-radius: 4px !important;
+}
+
+
+/* === 10- TOGGLE: Indicadores visuales en paneles (flechas) === */
+.focusedit-floatingArrow .interface-interface-skeleton__secondary-sidebar:not(:hover):not(.pinned)::after,
+.focusedit-floatingArrow .interface-interface-skeleton__sidebar:not(:hover):not(.pinned)::after,
+.focusedit-floatingArrow .interface-interface-skeleton__footer:not(:hover):not(.pinned)::after {
+    content: "▶";
+    position: absolute;
+    top: 50%;
+    color: #3858e9;
+    font-size: 15px;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.focusedit-floatingArrow .interface-interface-skeleton__secondary-sidebar:not(:hover):not(.pinned)::after {
+    right: 8px;
+    transform: translateY(-50%);
+}
+
+.focusedit-floatingArrow .interface-interface-skeleton__sidebar:not(:hover):not(.pinned)::after {
+    left: 8px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.focusedit-floatingArrow .interface-interface-skeleton__footer:not(:hover):not(.pinned)::after {
+    right: 8px;
+    transform: translateY(-55%);
+}

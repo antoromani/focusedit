@@ -1,0 +1,44 @@
+msgid "Ocultar título del editor"
+msgstr "Ocultar título del editor"
+
+msgid "Funciona con algunos temas y plugins: Spectra One, Ultimate Blocks, Otter, Getwig, Publishpress, Essential Blocks... no con: Kadence, Greenshift..."
+msgstr "Funciona con algunos temas y plugins: Spectra One, Ultimate Blocks, Otter, Getwig, Publishpress, Essential Blocks... no con: Kadence, Greenshift..."
+
+msgid "Interfaz limpia"
+msgstr "Interfaz limpia"
+
+msgid "Optimiza espacios en el Content Canvas y paneles"
+msgstr "Optimiza espacios en el Content Canvas y paneles"
+
+msgid "Barra superior con espacios optimizados"
+msgstr "Barra superior con espacios optimizados"
+
+msgid "Barra superior colapsable"
+msgstr "Barra superior colapsable"
+
+msgid "Paneles laterales flotantes"
+msgstr "Paneles laterales flotantes"
+
+msgid "Panel inferior flotante"
+msgstr "Panel inferior flotante"
+
+msgid "Anclaje manual de paneles con clic en espacio libre"
+msgstr "Anclaje manual de paneles con clic en espacio libre"
+
+msgid "En los paneles laterales, debe hacer clic en espacio libre de barra superior"
+msgstr "En los paneles laterales, debe hacer clic en espacio libre de barra superior"
+
+msgid "Expansión inteligente en panel derecho"
+msgstr "Expansión inteligente en panel derecho"
+
+msgid "Mostrar panel bloques al mouseover sobre Block Toolbar en el Content Canvas. Funciona con algunos temas y plugins."
+msgstr "Mostrar panel bloques al mouseover sobre Block Toolbar en el Content Canvas. Funciona con algunos temas y plugins."
+
+msgid "Scrollbars mínimalistas en paneles"
+msgstr "Scrollbars mínimalistas en paneles"
+
+msgid "Flecha en paneles flotantes"
+msgstr "Flecha en paneles flotantes"
+
+msgid "Ajustes del editor"
+msgstr "Ajustes del editor"
